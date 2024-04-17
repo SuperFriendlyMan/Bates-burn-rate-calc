@@ -6,6 +6,8 @@ Usage: python burnRateCalc.py timesFile.txt pressuresFile.txt config.txt output.
 Files MUST be in the directory you're executing the command from.
 This is only for a BATES propellant grain, and operates under the assumption that the throat area does not erode.
 
+The output file will compare your entered initial web thickness (difference between the outer and inner diameter of the grain) to the total accounted burn distance. These should be near each other to ensure a good approximation. If they aren't, input a different initial burn distance.
+
 Inputs and corresponding units for config file are as follows:
 
 #  - Number of propellant segments (N)
