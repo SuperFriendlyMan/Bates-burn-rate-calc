@@ -6,7 +6,7 @@ Usage: python burnRateCalc.py timesFile.txt pressuresFile.txt config.txt output.
 Files MUST be in the directory you're executing the command from.
 This is only for a BATES propellant grain, and operates under the assumption that the throat area does not erode.
 
-Inputs and corresponding units are as follows:
+Inputs and corresponding units for config file are as follows:
 
 #  - Number of propellant segments (N)
 #  - Segment outside diameter (D, mm)
