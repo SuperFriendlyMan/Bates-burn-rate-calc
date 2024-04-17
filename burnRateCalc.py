@@ -1,5 +1,5 @@
 # Approximates burn rate coefficients for a BATES propellant grain, Using method provided by https://www.nakka-rocketry.net/ptburn.html
-# By Chet for Ruggggggggers Rocket Propulsion Lab
+# By Chet for Ruggggggggers Rocket Propulsion Lab (I do not know how to code at all)
 import sys
 import numpy as np
 from scipy.optimize import curve_fit
