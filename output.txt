@@ -1,0 +1,2 @@
+With function aP^n, a approximated to be 2.500800327173689 and n_opt approximated to be 1.0165879337117851
+Your provided web thickness was 33.02. Total burn distance calculated as 9.266491457365849
