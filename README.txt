@@ -1,4 +1,4 @@
-Usage: python burnRateCalc.py timesFile.txt pressuresFile.txt config.txt output.txt
+Usage: python burnRateCalc.py timesFile.txt pressuresFile.txt config.txt output.txt from cd
 Files MUST be in the directory you're executing the command from.
 This is only for a BATES propellant grain, and operates under the assumption that the throat area does not erode.
 
