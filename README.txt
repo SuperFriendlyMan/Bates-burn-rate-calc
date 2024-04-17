@@ -1,4 +1,8 @@
-Usage: python burnRateCalc.py timesFile.txt pressuresFile.txt config.txt output.txt from cd
+Usage: python burnRateCalc.py timesFile.txt pressuresFile.txt config.txt output.txt from cd of proper folder in command prompt
+- timesFile and pressuresFile require matching time and pressure entries. goes line by line for each value. time should be in seconds and pressures should be in pascals
+- config file contains the rest of the relevant data for the propellant grain used for the calculations (see below)
+- sample input, output, and config files included in the folder, but you make your own for the grain
+
 Files MUST be in the directory you're executing the command from.
 This is only for a BATES propellant grain, and operates under the assumption that the throat area does not erode.
 
