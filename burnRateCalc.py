@@ -70,20 +70,17 @@ def dtArray():
   for i in range(1, length):
     dt[i] = times[i] - times[i - 1]
 
-def cumSum(arr, index):
-  cumalot = np.cumsum(arr)
-  return cumalot[index]
-
 def alpha():
   return rho * charVel
 
 alph = alpha()
 
 dtArray()
-burnAreas[0] = burnArea(d, do, lo, initialS, n)
+burnTotal[0] = initialS
+burnAreas[0] = burnArea(d, do, lo, burnTotal[0], n)
+print(burnAreas[0])
 lhs1 = LHS(at, pres[0], instBurn[0], dt[0], burnAreas[0], alph)
 instBurn[0] = (-1 * lhs1)
-burnTotal[0] = initialS
 instBurnRate[0] = instBurn[0] / dt[0]
 
 for i in range(1, length):
@@ -99,10 +96,11 @@ popt, pcov = curve_fit(burn_rate_model, mpaPress, instBurnRate)
 
 a_opt, n_opt = popt
 
-sumBurn = np.sum(instBurn)
+sumBurn = burnTotal[-1]
 
 outStr1 = "With function aP^n, a approximated to be " + str(a_opt) + " and n_opt approximated to be " + str(n_opt) 
 outStr2 = "Your provided web thickness was " + str(wo) + ". Total burn distance calculated as " + str(sumBurn)
 
 strings_array = np.array([outStr1, outStr2])
+print(strings_array)
 np.savetxt(outputFile, strings_array, fmt='%s')
